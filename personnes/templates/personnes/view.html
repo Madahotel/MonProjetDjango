@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil de {{ personne.nom }} {{ personne.prenom }}</title>
+    <!-- Lien vers le CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <!-- Titre principal -->
+    <h1 class="text-center text-primary mb-4">
+        Profil de {{ personne.nom }} {{ personne.prenom }}
+    </h1>
+    
+    <!-- Carte contenant les informations du profil -->
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="card-title text-center mb-4">Informations personnelles</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <strong>Adresse :</strong> {{ personne.adresse }}
+                </li>
+                <li class="list-group-item">
+                    <strong>École :</strong> {{ personne.ecole }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Expérience :</strong> {{ personne.experience }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Contact :</strong> {{ personne.contact }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Diplôme :</strong> {{ personne.diplome }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Langage :</strong> {{ personne.language }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Date de naissance :</strong> {{ personne.date_naissance }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Genre :</strong> {{ personne.genre }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Script JavaScript Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
