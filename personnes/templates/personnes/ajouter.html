@@ -1,0 +1,21 @@
+{% extends 'personnes/base.html' %}
+{% block content %}
+<h2>Ajouter une personne</h2>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="nom" placeholder="Nom" class="form-control"><br>
+    <input type="text" name="prenom" placeholder="Prénom" class="form-control"><br>
+    <textarea name="adresse" placeholder="Adresse" class="form-control"></textarea><br>
+    <input type="text" name="ecole" placeholder="École" class="form-control"><br>
+    <input type="text" name="experience" placeholder="Expérience" class="form-control"><br>
+    <input type="text" name="contact" placeholder="Contact" class="form-control"><br>
+    <input type="text" name="diplome" placeholder="Diplôme" class="form-control"><br>
+    <input type="text" name="language" placeholder="Langages" class="form-control"><br>
+    <input type="date" name="date_naissance" class="form-control"><br>
+    <select name="genre" class="form-control">
+        <option value="M">Masculin</option>
+        <option value="F">Féminin</option>
+    </select><br>
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+</form>
+{% endblock %}

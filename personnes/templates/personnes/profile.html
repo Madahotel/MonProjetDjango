@@ -1,0 +1,12 @@
+{% extends 'personnes/base.html' %}
+{% block content %}
+<h2>Profil de {{ personne.nom }} {{ personne.prenom }}</h2>
+<p><strong>Adresse :</strong> {{ personne.adresse }}</p>
+<p><strong>École :</strong> {{ personne.ecole }}</p>
+<p><strong>Expérience :</strong> {{ personne.experience }}</p>
+<p><strong>Contact :</strong> {{ personne.contact }}</p>
+<p><strong>Diplôme :</strong> {{ personne.diplome }}</p>
+<p><strong>Langages :</strong> {{ personne.language }}</p>
+<p><strong>Date de naissance :</strong> {{ personne.date_naissance }}</p>
+<p><strong>Genre :</strong> {{ personne.genre }}</p>
+{% endblock %}

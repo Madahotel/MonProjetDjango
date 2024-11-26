@@ -1,0 +1,18 @@
+{% extends 'personnes/base.html' %}
+{% block content %}
+<h2>Liste des personnes</h2>
+<table class="table">
+    <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Profil</th>
+    </tr>
+    {% for personne in personnes %}
+    <tr>
+        <td>{{ personne.nom }}</td>
+        <td>{{ personne.prenom }}</td>
+        <td><a href="/profil/{{ personne.id }}">Voir Profil</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
